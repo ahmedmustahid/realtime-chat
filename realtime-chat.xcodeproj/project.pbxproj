@@ -11,8 +11,11 @@
 		0D685DC968C753663A25983D /* Pods_realtime_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B47F84534A1CEBA748735B7 /* Pods_realtime_chat.framework */; };
 		879E8B2E16188230CEB2706A /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9740F5A550F04BED5B98FC4 /* Message+Schema.swift */; };
 		89A19F7D38054D465C00108C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C903F2350EA43EB8657D0A /* AmplifyModels.swift */; };
+		9C72DC9926CBB49000B4986C /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72DC9826CBB49000B4986C /* MessageRow.swift */; };
+		9C72DC9B26CBBC4F00B4986C /* SourceOfTruth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72DC9A26CBBC4F00B4986C /* SourceOfTruth.swift */; };
+		9C72DC9D26CBBDCA00B4986C /* Message+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72DC9C26CBBDCA00B4986C /* Message+Extensions.swift */; };
 		9C76521C26CBA76200B32E0E /* realtime_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76521B26CBA76200B32E0E /* realtime_chatApp.swift */; };
-		9C76521E26CBA76200B32E0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76521D26CBA76200B32E0E /* ContentView.swift */; };
+		9C76521E26CBA76200B32E0E /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76521D26CBA76200B32E0E /* MessageView.swift */; };
 		9C76522026CBA76400B32E0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C76521F26CBA76400B32E0E /* Assets.xcassets */; };
 		9C76522326CBA76400B32E0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C76522226CBA76400B32E0E /* Preview Assets.xcassets */; };
 		9C76522D26CBA76500B32E0E /* realtime_chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76522C26CBA76500B32E0E /* realtime_chatTests.swift */; };
@@ -48,9 +51,12 @@
 		4A733A1EBCD17F3BAF3E616B /* Pods-realtime-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realtime-chat.release.xcconfig"; path = "Target Support Files/Pods-realtime-chat/Pods-realtime-chat.release.xcconfig"; sourceTree = "<group>"; };
 		4B47F84534A1CEBA748735B7 /* Pods_realtime_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realtime_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C903F2350EA43EB8657D0A /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		9C72DC9826CBB49000B4986C /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		9C72DC9A26CBBC4F00B4986C /* SourceOfTruth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceOfTruth.swift; sourceTree = "<group>"; };
+		9C72DC9C26CBBDCA00B4986C /* Message+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+Extensions.swift"; sourceTree = "<group>"; };
 		9C76521826CBA76200B32E0E /* realtime-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realtime-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C76521B26CBA76200B32E0E /* realtime_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtime_chatApp.swift; sourceTree = "<group>"; };
-		9C76521D26CBA76200B32E0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C76521D26CBA76200B32E0E /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		9C76521F26CBA76400B32E0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C76522226CBA76400B32E0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9C76522826CBA76500B32E0E /* realtime-chatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realtime-chatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,9 +151,12 @@
 			children = (
 				9C8AC03D26CBAC3F00A61C32 /* models */,
 				9C76521B26CBA76200B32E0E /* realtime_chatApp.swift */,
-				9C76521D26CBA76200B32E0E /* ContentView.swift */,
+				9C76521D26CBA76200B32E0E /* MessageView.swift */,
+				9C72DC9826CBB49000B4986C /* MessageRow.swift */,
 				9C76521F26CBA76400B32E0E /* Assets.xcassets */,
 				9C76522126CBA76400B32E0E /* Preview Content */,
+				9C72DC9A26CBBC4F00B4986C /* SourceOfTruth.swift */,
+				9C72DC9C26CBBDCA00B4986C /* Message+Extensions.swift */,
 			);
 			path = "realtime-chat";
 			sourceTree = "<group>";
@@ -378,7 +387,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8AC04326CBAC3F00A61C32 /* Message+Schema.swift in Sources */,
-				9C76521E26CBA76200B32E0E /* ContentView.swift in Sources */,
+				9C72DC9B26CBBC4F00B4986C /* SourceOfTruth.swift in Sources */,
+				9C72DC9D26CBBDCA00B4986C /* Message+Extensions.swift in Sources */,
+				9C76521E26CBA76200B32E0E /* MessageView.swift in Sources */,
+				9C72DC9926CBB49000B4986C /* MessageRow.swift in Sources */,
 				9C76521C26CBA76200B32E0E /* realtime_chatApp.swift in Sources */,
 				89A19F7D38054D465C00108C /* AmplifyModels.swift in Sources */,
 				879E8B2E16188230CEB2706A /* Message+Schema.swift in Sources */,

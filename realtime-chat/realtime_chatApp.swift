@@ -11,9 +11,29 @@ import AmplifyPlugins
 
 @main
 struct realtime_chatApp: App {
+    
+    init() {
+        configureAmplify()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MessageView()
         }
     }
+    private func configureAmplify() {
+        do {
+            let models = AmplifyModels()
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: models))
+                
+            try Amplify.configure()
+                
+            print("Configured amplify")
+        } catch {
+            print("Couldnt configure amplify", error)
+        }
+    }
+   
+
+    
 }
